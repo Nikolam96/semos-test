@@ -3,9 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EJS Example</title>
+    <title>EJS Welcome</title>
   </head>
   <body>
-    <h1><%= message %></h1>
+    <div>
+      <table border="1" width="100%">
+        <tr>
+          <th>Ime</th>
+          <th>Email</th>
+          <th>Type</th>
+        </tr>
+        <% kurs.forEach(v => { %>
+        <tr>
+          <td><%=v.type%></td>
+          <td><%=v.email%></td>
+          <td><%=v.type%></td>
+        </tr>
+        <% } ); %>
+      </table>
+    </div>
   </body>
 </html>

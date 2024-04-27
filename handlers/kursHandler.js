@@ -1,8 +1,13 @@
 const Kurs = require("../pkg/kurs/kursSchema");
+const Akademija = require("../pkg/akademija/akademijaSchema");
 
 exports.createKurs = async (req, res) => {
   try {
-    const kurs = await Kurs.create(req.body);
+    const akademija = await Akademija.findById(req.body.id);
+    const kurs = await Kurs.create({
+      ...req.body,
+      akademija: akademija._id,
+    });
     res.status(201).json({
       status: "created",
       message: kurs,

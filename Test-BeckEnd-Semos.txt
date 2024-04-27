@@ -1,0 +1,21 @@
+1. Што е World Wide Web? World Wide Web je nam omogucava da delimo informacije preko interneta,ondnosno preko texta i to se koristi kao prefix npr. www.gooogle.com
+
+2.Какви пораки се испраќаат преку HTTP помеѓу клиентот и серверот? HTTP je jedan veliki objekt koji ima vise celina odnosno,headers,payload i preko njega kominiciraju FE i BE odnosno se salje kako povik za web strana.
+
+3.Што е MVC архитектура и што е обврската на нејзините составни делови? Што е Node.js, а што Express.js? Node.js server side okolina na kojoj preko JS koda mozemo da pisemo server side aplikaciji,a express je najpoznatiji framework za node i on nam omogucava da lakse pisemo kod.
+
+4.Што е MVC архитектура и што е обврската на нејзините составни делови? MVC ondosno Model,gde cemo da stavimo Scheme za databazu,povezivanje datazu,V-View tu nam je front end odnosno react,Ejs itd itd,C-Controler je mesto gde pisemo end-points odnosno ruti, i handleri za te ruti odnosno kad dodjemo do taj end point sta bi nam to vratilo kako respose.
+
+5. Што се рути? URL adresa preko koje mozemo da pristupimo do odredjen sajt,ili zeljenu osebinu 
+
+6.Што се модули? (бонус: какви типови на модули има?) Nisam siguran da razumem pitanje ali moduli su kod koji mozemo da napisemo sami,iskoristimo built-in,ili preko npm instaliramo, i da ga uvek upotrebljavamo imamo thrid party modules,local modules,Core modules
+
+7.Што е веб сервис? Дадете пример за еден веб сервис. web service je ako sam dobro razumo pitanje client ce potrazi pobaruvanje na server i server ce ga usluzi,client salje http povik iz toga povika izvucemo sve potrebne informacije i vratimo nazad kako respose.
+
+8.Објаснете што е и како функционира JWT автентикација? JWT-odnosno json-web-token je nesto sto ispracamo kako bi proverili jel smo to stvarno mi,jwt ima headers,payload i secret key i mi preko tog secret-key ispracamo do korsnik i on da bi potvrdio da je on sa tim istim tokenom mora da posalje u http povik.
+
+9.Што е MongoDB? Објаснете накратко за каков софтвер станува збор? Mongo DB je najpoznatija databaza za node.js i to je ne-strukturirana databaza odnosno skladistimo kako objekt podatocite,non relation database.
+
+10.Што е разликата помеѓу MongoDB и Mongoose? Mongo Db je database,mongoose je framework za Mongo DB
+
+11.Што е разликата помеѓу Synchronous (Сихрона) i Аsynchronous (Асинхрона) функција во Node.js Sinhrona funkcija se izvrsava jedna po jedna odnosno kod po kod,dok ako imamo asinhornu to ce ici preko weba a kod se nastavalja dalje,posle nakon sto je kod gotov,to i u callstack i izvrava se
